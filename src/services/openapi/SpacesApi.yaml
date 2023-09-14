@@ -1,0 +1,16 @@
+swagger: '2.0'
+info:
+  version: '2023-09-07T06:05:33Z'
+  title: SpacesApi
+schemes:
+  - https
+paths:
+  /spaces:
+    get:
+      responses: {}
+      x-amazon-apigateway-integration:
+        httpMethod: POST
+        uri: >-
+          arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:134854240686:function:LambdaStack-HelloLambda3D9C82D6-F2h7i7iCImzF/invocations
+        passthroughBehavior: when_no_match
+        type: aws_proxy

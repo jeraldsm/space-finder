@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=134854240686:domainName=jsmtraining.com:region=us-east-1": {
+    "Id": "/hostedzone/Z081373077UFK621BBGR",
+    "Name": "jsmtraining.com."
+  },
+  "hosted-zone:account=134854240686:domainName=jsmtraining.com:region=eu-central-1": {
+    "Id": "/hostedzone/Z081373077UFK621BBGR",
+    "Name": "jsmtraining.com."
+  }
+}

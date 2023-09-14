@@ -1,0 +1,34 @@
+@url = https://1ocfx5qujf.execute-api.eu-central-1.amazonaws.com/prod
+@acurl = https://api.jsmtraining.com/api
+
+@ccurl = https://www.jsmtraining.com/api
+
+@token = eyJraWQiOiJ5eHNzUEs0UDE5ajN3VEh2RVFkN2dDYit4NGlFcnFVWlwvN29vXC9JQndOR2c9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyM2Q0YTgxMi0yMDExLTcwNzktZTJkNC0yMDUyNzgxN2JlMDAiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LWNlbnRyYWwtMS5hbWF6b25hd3MuY29tXC9ldS1jZW50cmFsLTFfc1VSQU5pTklUIiwiY29nbml0bzp1c2VybmFtZSI6ImplcmFsZC5zYWJ1Iiwib3JpZ2luX2p0aSI6IjM3ODZlNWRmLThiMzItNDBlNy1iOGYyLTIzNDM0MjIwYThiNyIsImF1ZCI6IjNyaHM5cGdkZjBram9jNXMxNzNqazl0MTEiLCJldmVudF9pZCI6ImMyZWIyYmIyLTE1N2MtNDk0OC05OGNhLTRlMzAzOTY1ZTY0NSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjk0NjQzNzk3LCJleHAiOjE2OTQ2NDczOTcsImlhdCI6MTY5NDY0Mzc5NywianRpIjoiM2E1Njg5NTYtMzMyNC00ODA0LWFkNWUtYzkxNmU0NGQ5NjY1IiwiZW1haWwiOiJqZXJhbGRzYWJ1QGdtYWlsLmNvbSJ9.rRs2YATtqjPv67SzKr_CStIgDjTB6a2u-6atephJ4MaaDt7L3t36XEOuXn6d86aX1j84_xaK0ulEPNRVtnBXQAN_ntmaWKGJC7TjEhHCIXeTdxXDRyWPCF7TzCgLXDwj7Mo4nIjFlMAzWXIXkicEmkQ7x1018wsjdE347Obw4pViq2vfP2OPBrNkF3C2dbLrZAdDc72E8W4z1KZPXblJPpjD3DCAE5snKeWBAt36wTUwFTtTrqhQW7vFcIrPp7k0PO6xH10OpwqnCgZEXSttVcCDhs_eQQWMXrf1f6qUJAiwICW0DxiQJ-8WL4N62BazFvJspDs0x2G8dfD_petqEA
+
+GET {{ccurl}}/spaces
+Authorization: {{token}}
+###
+
+POST {{url}}/spaces
+content-type: application/json
+
+ {
+    "location": "Dublin",
+    "name": "Best location"
+ }
+###
+
+GET https://1ertg407z7.execute-api.eu-west-1.amazonaws.com/prod/spaces?id=fbe76aea-5aff-434e-85f6-e8f5fc1647ec
+###
+
+DELETE {{url}}/spaces
+Authorization: {{token}}
+###
+
+PUT https://1ertg407z7.execute-api.eu-west-1.amazonaws.com/prod/spaces?id=fbe76aea-5aff-434e-85f6-e8f5fc1647ec
+content-type: application/json
+
+ {
+    "name": "Best location 5"
+ }
+###
